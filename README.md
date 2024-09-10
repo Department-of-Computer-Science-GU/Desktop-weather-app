@@ -17,3 +17,11 @@ A Python application that fetches real-time weather data for a specified city an
    ```bash
    git clone https://github.com/rhidhanmadai/Weather_notifier.git
    cd Weather_notifier
+2.  Usage
+Run the Weather_notifier.py script:
+
+The application will fetch the weather data for the specified city (default is London) and display notifications with the weather information every 30 minutes.
+
+To change the city or interval:
+
+Modify the city and time.sleep() in the main() function as needed.
