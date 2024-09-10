@@ -1,6 +1,12 @@
 import time
 from plyer import notification
 import requests
+import os
+from dotenv import load_dotenv
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 def get_weather(api_key, city):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
@@ -16,7 +22,7 @@ def show_notification(title, message):
     )
 
 def main():
-    api_key = '69e1a59e03cc1ba53a29ed731bbc23ea'
+    api_key = 'api_key = os.getenv("API_KEY")'
     city = 'Gulu'
 
     while True:
